@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Web <span>Portfolio</span></a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="quizzes.html" class="active">Quizzes</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!--quizzes section-->
+    <section class="quiz">
+        <div class="main-text">
+            <h2>Pre <span>Quizzes</span></h2>
+        </div>
+        <div class="quiz-content">
+            <div class="box">
+                <h3>Pre <span>Quiz 1</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Pre <span>Quiz 2</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Pre <span>Quiz 3</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Pre <span>Quiz 4</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Pre <span>Quiz 5</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Pre <span>Quiz 6</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+        </div>
+
+        <div class="main-text1">
+            <h2>Post <span>Quizzes</span></h2>
+        </div>
+        <div class="quiz-content">
+            <div class="box">
+                <h3>Post <span>Quiz 1</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Post <span>Quiz 2</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Post <span>Quiz 3</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Post <span>Quiz 4</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Post <span>Quiz 5</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+
+              <div class="box">
+                <h3>Post <span>Quiz 6</span></h3>
+                <div class="popup-trigger" data-img="quizzes/noquizresult.png">
+                  <img src="quizzes/noquizresult.png" alt="Quiz1">
+                </div>
+                <p>Score: </p>
+              </div>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <img id="popup-img" src="" alt="Popup Image">
+          <h3 id="popup-title"></h3>
+          <p id="popup-description"></p>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+
+      <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+      
+        menu.addEventListener('click', () => {
+          navlist.classList.toggle('active');
+          menu.classList.toggle('bx-x');
+        });
+      </script>
+</body>
+</html>

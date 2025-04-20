@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Web <span>Portfolio</span></a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html" class="active">Projects</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+      <!--Project Section-->
+
+      <section class="project" id="project">
+        <div class="main-text">
+            <h2><span>Latest </span>Project/Activity</h2>
+        </div>
+        <div class="project-content">
+            <div class="row">
+                <img src="projects/firstActThumbnail.png">
+                <div class="layer">
+                    <h2>About</h2>
+                    <p>Burger Bites PH is a blog dedicated to exploring 
+                        and celebrating the best hamburgers in the 
+                        Philippines. This site was created for burger 
+                        lovers who are always on the hunt for the next 
+                        juicy, flavorful bite — whether it’s from a 
+                        well-known chain, a local diner, or a small 
+                        food stall tucked away in a quiet neighborhood.</p>
+                        <a href="projects/Hamberber Blog V3-1/Hamberber Blog V3-1/Hamberber Blog/index.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            
+
+          <!--magdadagdag nalang ako here pagkameron na ibang activity and project, just copy the first div-->
+
+        </div>
+    </section>
+
+
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+      
+        menu.addEventListener('click', () => {
+          navlist.classList.toggle('active');
+          menu.classList.toggle('bx-x');
+        });
+      </script>
+     
+</body>
+</html>

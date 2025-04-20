@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Web <span>Portfolio</span></a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html"  class="active">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+<section>
+    <div class="resume">
+        <!-- Left Column -->
+        <div class="left-column">
+          <div class="profile-pic">
+            <img src="images/me2.jpg" alt="Profile Photo" />
+          </div>
+          <div class="section">
+            <h3>• Skills and Expertise</h3>
+        <ul>
+            <li>• Know how to socialize and collaborate with
+                team and/or groups.
+            </li><br>
+            <li>• Easy to talk.</li><br>
+            <li>• Can work under pressure.</li><br>
+            <li>• Have a pleasing personality.</li>
+        </ul>
+          </div>
+          <div class="section">
+            <h3>Language</h3>
+            <ul>
+              <li>• English</li><br>
+              <li>• Filipino</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Right Column -->
+        <div class="right-column">
+          <h1>Ma. Marjorie Suarez</h1>
+          <h2>Graphics Designer</h2>
+    
+          <div class="section">
+            <h3>Personal Information</h3>
+            <div class="item">
+              <p><i class='bx bxs-contact'></i> 63+ 967 652 0313</p>
+              <p><i class='bx bxl-gmail'></i> suarez@gmail.com</p>
+              <p><i class='bx bx-current-location'></i> Damariñas, Cavite</p>
+            </div>
+          </div>
+    
+          <div class="section">
+            <h3>Education</h3>
+            <div class="item">
+              <h4>Bachelor of Science in Information Technology</h4>
+              <p>• Cavite State University - Silang Campus<br>• Currently 3rd Year College</p>
+            </div>
+            <div class="item">
+              <h4>Philippine Technological Institute of Science and Arts Trade Inc.</h4>
+              <p>• GMA, Cavite<br>• 2019 - 2021</p>
+            </div>
+            <div class="item">
+                <h4>Paliparan National High School</h4>
+                <p>• Damariñas, Cavite<br>• 2016 - 2019</p>
+              </div>
+              <p>I hearby certify that the information above is true and correct to the best of my knowledge and belief.</p>
+          </div>
+        </div>
+      </div>
+      <a href="images/CV.pdf" download="CV.pdf" class="btnCV">Download CV</a>
+
+</section>
+
+
+
+
+    <script>
+  let menu = document.querySelector('#menu-icon');
+  let navlist = document.querySelector('.navlist');
+
+  menu.addEventListener('click', () => {
+    navlist.classList.toggle('active');
+    menu.classList.toggle('bx-x');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Web <span>Portfolio</span></a>
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+<!--home section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+            </div>
+            <h1>Marjorie</h1>
+            <h3>Graphics <span>Designer.</span></h3>
+            <p>A passionate <b>Graphics Designer</b> with a keen eye for 
+                <br>aesthetics and a love for visual storytelling.</p>
+        </div>
+        <div class="home-img">
+            <img src="images/me2.jpg" alt="My Photo">
+        </div>
+    </section>
+
+    <!--About Section-->
+
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="images/me.png" alt="ako to">
+        </div>
+
+        <div class="about-text">
+            <h2>About <span>Me!</span></h2>
+            <h4>Website Designer</h4>
+            <p>Hi! I’m a passionate Graphics Designer with a keen eye for 
+                aesthetics and a love for visual storytelling. 
+                I specialize in creating clean, modern, and effective 
+                designs that bring ideas to life — whether it’s branding, 
+                web design, marketing materials, or digital content.</p>
+            <a href="about.html" class="btn">More About</a>    
+        </div>
+    </section>
+
+    <!--contact section-->
+
+    <footer class="contact" id="contact">
+        
+        <div class="contact-text">
+            <div class="contact-logo">
+                <a href="#" class="logo">Web <span>Portfolio</span></a>
+                <h4>by Ma. Marjorie Suarez</h4>
+            </div>
+            <h4>Let’s Work Together!</h4>
+            <p>Have a project in mind or just want to say hi? I'm always 
+                open to discussing design work, creative ideas, or 
+                collaborations.</p>
+        </div>
+
+        <div class="list">
+            <h2><span>Contact </span>Me!</h2>
+            <li><a><i class='bx bxs-contact'></i> 63+ 967 652 0313</a></li>
+            <li><a><i class='bx bxl-gmail'></i> suarez@gmail.com</a></li>
+            <li><a><i class='bx bx-current-location'></i> Damariñas, Cavite</a></li>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/share/169WYDt1mn/"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/ma-marjorie-suarez-3a130635a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <h4>© 2025 <span>MyWebPortfolio</span> by Ma. Marjorie Suarez | All Rights Reserved</h4>
+    </div>
+</footer>
+
+  
+   
+
+<script>
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
+  
+    menu.addEventListener('click', () => {
+    navlist.classList.toggle('active');
+    menu.classList.toggle('bx-x');
+    });
+  </script>
+</body>
+</html>
