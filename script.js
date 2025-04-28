@@ -13,7 +13,7 @@ const popupTitle = document.getElementById("popup-title");
 const popupDescription = document.getElementById("popup-description");
 const closeBtn = document.querySelector(".close-btn");
 
-// Get all clickable image wrappers
+
 const triggers = document.querySelectorAll(".popup-trigger");
 
 triggers.forEach(trigger => {
@@ -22,22 +22,22 @@ triggers.forEach(trigger => {
         const title = trigger.dataset.title;
         const description = trigger.dataset.description;
 
-        // Fill in popup data
+      
         popupImg.src = imgSrc;
         popupTitle.textContent = title;
         popupDescription.textContent = description;
 
-        // Show the popup
+
         popup.style.display = "flex";
     });
 });
 
-// Close modal
+
 closeBtn.addEventListener("click", () => {
     popup.style.display = "none";
 });
 
-// Close modal when clicking outside content
+
 window.addEventListener("click", e => {
     if (e.target === popup) {
         popup.style.display = "none";

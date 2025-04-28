@@ -46,9 +46,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(17, 17, 17, 0); /* slightly see-through */
+    background: rgba(17, 17, 17, 0); 
     padding: 30px 10%;
-    backdrop-filter: blur(10px); /* optional: for frosted glass effect */
+    backdrop-filter: blur(10px); 
     transition: all 0.3s ease;
 }
 
@@ -516,7 +516,7 @@ section{
 }
 
 .copyright {
-    grid-column: 1 / -1; /* Make it span across both columns */
+    grid-column: 1 / -1; 
     text-align: center;
 }
 
@@ -633,8 +633,6 @@ section{
 /*---------------------------*/
 /*responsive media*/
 
-
-/* ========== Media Query for max-width: 1110px ========== */
 @media (max-width: 1110px) {
     header {
         padding: 25px 5%;
@@ -668,7 +666,6 @@ section{
     }
 }
 
-/* ========== Media Query for max-width: 930px ========== */
 @media (max-width: 930px) {
     #menu-icon {
         display: block;
@@ -732,7 +729,6 @@ section{
     }
 }
 
-/* ========== Media Query for max-width: 480px ========== */
 @media (max-width: 480px) {
     header {
         padding: 20px 5%;
